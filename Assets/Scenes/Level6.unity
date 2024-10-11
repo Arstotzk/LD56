@@ -358,8 +358,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -482,8 +482,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -683,8 +683,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -990,8 +990,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -1459,8 +1459,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -1583,8 +1583,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -1632,8 +1632,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.51, y: 0.3}
+  m_Offset: {x: 1.6358794e-12, y: -0.0037856775}
+  m_Size: {x: 0.5100003, y: 0.30759573}
   m_Direction: 1
 --- !u!1 &510418094
 GameObject:
@@ -1793,8 +1793,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -1842,8 +1842,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.51, y: 0.3}
+  m_Offset: {x: 0.066785485, y: 0.035391327}
+  m_Size: {x: 0.37643114, y: 0.22921892}
   m_Direction: 1
 --- !u!1 &525859903
 GameObject:
@@ -2089,8 +2089,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -2213,8 +2213,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -2262,8 +2262,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.51, y: 0.3}
+  m_Offset: {x: 0.056584664, y: 0.002179444}
+  m_Size: {x: 0.5961177, y: 0.29564437}
   m_Direction: 1
 --- !u!4 &613972231 stripped
 Transform:
@@ -2605,8 +2605,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -2654,8 +2654,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.51, y: 0.3}
+  m_Offset: {x: -4.0730327e-12, y: 0.026822496}
+  m_Size: {x: 0.5099999, y: 0.24635546}
   m_Direction: 1
 --- !u!1 &789925416
 GameObject:
@@ -2729,8 +2729,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -3174,8 +3174,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -3298,8 +3298,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -3739,8 +3739,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -4046,8 +4046,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -4393,8 +4393,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -4442,8 +4442,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.51, y: 0.3}
+  m_Offset: {x: 5.3696284e-12, y: 0.020432854}
+  m_Size: {x: 0.5100001, y: 0.25913498}
   m_Direction: 1
 --- !u!1 &1163822366
 GameObject:
@@ -4517,8 +4517,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -4727,8 +4727,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -4937,8 +4937,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -5147,8 +5147,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -5357,8 +5357,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -5406,8 +5406,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.51, y: 0.3}
+  m_Offset: {x: 0.07235211, y: 0.012985206}
+  m_Size: {x: 0.6279887, y: 0.2740354}
   m_Direction: 1
 --- !u!1 &1482140009
 GameObject:
@@ -5481,8 +5481,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -12674,8 +12674,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -12798,8 +12798,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -12847,8 +12847,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.51, y: 0.3}
+  m_Offset: {x: 0.0000000024264746, y: 0.043852307}
+  m_Size: {x: 0.51000005, y: 0.21229576}
   m_Direction: 1
 --- !u!1 &1605415400
 GameObject:
@@ -12990,8 +12990,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -13114,8 +13114,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -13324,8 +13324,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -13722,8 +13722,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -13870,7 +13870,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2400551220581134921, guid: ffc73df022b2c9e489884924ef7cdc43, type: 3}
       propertyPath: m_Mass
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6293088367354206139, guid: ffc73df022b2c9e489884924ef7cdc43, type: 3}
       propertyPath: m_LocalScale.x
@@ -14704,8 +14704,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -14828,8 +14828,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -14952,8 +14952,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
-  m_LinearDrag: 0.5
+  m_Mass: 0.5
+  m_LinearDrag: 0
   m_AngularDrag: 0.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -15222,6 +15222,10 @@ PrefabInstance:
     - target: {fileID: 91250989895118478, guid: 1add08a872fbbc8479555f98f5f9d70d, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1522927685824694568, guid: 1add08a872fbbc8479555f98f5f9d70d, type: 3}
+      propertyPath: maxAvailableBots
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1951935612892408997, guid: 1add08a872fbbc8479555f98f5f9d70d, type: 3}
       propertyPath: m_Name

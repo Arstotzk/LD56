@@ -14081,6 +14081,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1522927685824694568, guid: 1add08a872fbbc8479555f98f5f9d70d, type: 3}
+      propertyPath: maxAvailableBots
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 1951935612892408997, guid: 1add08a872fbbc8479555f98f5f9d70d, type: 3}
       propertyPath: m_Name
       value: Storage

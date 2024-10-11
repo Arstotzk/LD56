@@ -202,6 +202,7 @@ Transform:
   - {fileID: 804987105}
   - {fileID: 267937450}
   - {fileID: 1780443093}
+  - {fileID: 720640433}
   - {fileID: 1894128875}
   - {fileID: 965534624}
   m_Father: {fileID: 0}
@@ -2646,6 +2647,68 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1001 &720640432
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 61968466}
+    m_Modifications:
+    - target: {fileID: 4301751750796528176, guid: bbd87121cb5c695418fe1f267b8b7db6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301751750796528176, guid: bbd87121cb5c695418fe1f267b8b7db6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301751750796528176, guid: bbd87121cb5c695418fe1f267b8b7db6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301751750796528176, guid: bbd87121cb5c695418fe1f267b8b7db6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301751750796528176, guid: bbd87121cb5c695418fe1f267b8b7db6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301751750796528176, guid: bbd87121cb5c695418fe1f267b8b7db6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301751750796528176, guid: bbd87121cb5c695418fe1f267b8b7db6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301751750796528176, guid: bbd87121cb5c695418fe1f267b8b7db6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301751750796528176, guid: bbd87121cb5c695418fe1f267b8b7db6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301751750796528176, guid: bbd87121cb5c695418fe1f267b8b7db6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5787599152450069772, guid: bbd87121cb5c695418fe1f267b8b7db6, type: 3}
+      propertyPath: m_Name
+      value: DeathCollider
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bbd87121cb5c695418fe1f267b8b7db6, type: 3}
+--- !u!4 &720640433 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4301751750796528176, guid: bbd87121cb5c695418fe1f267b8b7db6, type: 3}
+  m_PrefabInstance: {fileID: 720640432}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &732176255
 GameObject:
   m_ObjectHideFlags: 0
@@ -13520,6 +13583,10 @@ PrefabInstance:
     - target: {fileID: 91250989895118478, guid: 1add08a872fbbc8479555f98f5f9d70d, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1522927685824694568, guid: 1add08a872fbbc8479555f98f5f9d70d, type: 3}
+      propertyPath: maxAvailableBots
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1951935612892408997, guid: 1add08a872fbbc8479555f98f5f9d70d, type: 3}
       propertyPath: m_Name

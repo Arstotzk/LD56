@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Spawn : MonoBehaviour
 {
     public GameObject playerBot;
     public void SpawnBot(GameObject previosBot, bool isResapwn)
     {
+        var botsManager = GameObject.FindFirstObjectByType<BotsManager>();
         var newBot = GameObject.Instantiate(playerBot);
         newBot.SetActive(true);
         newBot.GetComponent<PlayerInput>().enabled = true;
@@ -16,15 +18,15 @@ public class Spawn : MonoBehaviour
         newBot.GetComponent<PlayerInput>().DialogUnshow();
         if (isResapwn)
         {
-            newBot.GetComponent<PlayerInput>().previousBot = null;
-            newBot.GetComponent<PlayerInput>().maxAvailableBots = previosBot.GetComponent<PlayerInput>().maxAvailableBots;
-            newBot.GetComponent<PlayerInput>().availableBots = previosBot.GetComponent<PlayerInput>().availableBots;
+            //newBot.GetComponent<PlayerInput>().previousBot = null;
+            //newBot.GetComponent<PlayerInput>().maxAvailableBots = previosBot.GetComponent<PlayerInput>().maxAvailableBots;
+            //newBot.GetComponent<PlayerInput>().availableBots = previosBot.GetComponent<PlayerInput>().availableBots;
         }
         else
         {
-            newBot.GetComponent<PlayerInput>().previousBot = previosBot;
-            newBot.GetComponent<PlayerInput>().maxAvailableBots = previosBot.GetComponent<PlayerInput>().maxAvailableBots;
-            newBot.GetComponent<PlayerInput>().availableBots = previosBot.GetComponent<PlayerInput>().availableBots - 1;
+            //newBot.GetComponent<PlayerInput>().previousBot = previosBot;
+            //newBot.GetComponent<PlayerInput>().maxAvailableBots = previosBot.GetComponent<PlayerInput>().maxAvailableBots;
+            botsManager.availableBots -= 1;
         }
         newBot.GetComponent<PlayerInput>().SetAvailableBots();
         int LayerIgnoreRaycast = LayerMask.NameToLayer("Grabbing");

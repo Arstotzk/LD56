@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Linq;
 
 public class PlayerInput : MonoBehaviour
 {
@@ -11,7 +12,6 @@ public class PlayerInput : MonoBehaviour
     public Hook hookFirst;
     public Hook hookSecond;
     public Spawn spawn;
-    public GameObject previousBot = null;
     public UIController uiController;
     public SpriteRenderer spriteRenderer;
     public Sprite spriteIdle;
@@ -21,6 +21,7 @@ public class PlayerInput : MonoBehaviour
     public GameObject groundChecker;
     public ParticleSystem runEffect;
     public ParticleSystem deadEffect;
+    public BotsManager botsManager;
 
     public float speed = 4f;
     public float speedClimb = 4f;
@@ -32,6 +33,7 @@ public class PlayerInput : MonoBehaviour
     public float ropeConst = 0.5f;
     public int maxAvailableBots = 1;
     public int availableBots = 0;
+    public bool isDestroing = false;
 
     private int frame = 0;
     private int maxFrame = 20;
@@ -58,8 +60,10 @@ public class PlayerInput : MonoBehaviour
     void Start()
     {
         isTurnRight = true;
-        uiController.SetAvailableBots(availableBots);
-        uiController.SetMaxAvailableBots(maxAvailableBots);
+        botsManager = GameObject.FindFirstObjectByType<BotsManager>();
+        botsManager.AddBot(this.gameObject);
+        uiController.SetAvailableBots(botsManager.availableBots);
+        uiController.SetMaxAvailableBots(botsManager.maxAvailableBots);
     }
     void Update()
     {
@@ -91,6 +95,7 @@ public class PlayerInput : MonoBehaviour
     }
     public void OnEnable()
     {
+        botsManager = GameObject.FindFirstObjectByType<BotsManager>();
         gameControl.Gameplay.Jamp.performed += Jump;
 
         gameControl.Gameplay.FirstHook.performed += SetFirstHook;
@@ -339,7 +344,7 @@ public class PlayerInput : MonoBehaviour
 
     private void NewBot(InputAction.CallbackContext ctx) 
     {
-        if (availableBots > 0)
+        if (botsManager.availableBots > 0)
         {
             spawn.SpawnBot(this.gameObject, false);
             this.enabled = false;
@@ -348,24 +353,52 @@ public class PlayerInput : MonoBehaviour
     }
     private void Destroy(InputAction.CallbackContext ctx)
     {
-        if (previousBot == null)
+        Destroy();
+    }
+    public void Destroy()
+    {
+        var previousBot = botsManager.GetPreviosBot();
+        botsManager.DeleteBot(this.gameObject);
+        var objects = GameObject.FindObjectsByType<PlayerInput>(FindObjectsSortMode.None);
+        if (this.enabled == false)
         {
+            StartCoroutine(RealDestroy());
+            playerSounds.died.Play();
+            deadEffect.Play();
+            isDestroing = true;
+            foreach (var player in objects)
+            {
+                if (player.enabled == true)
+                {
+                    player.botsManager.availableBots += 1;
+                    player.SetAvailableBots();
+                }
+            }
+            return;
+        }
+        if (isDestroing == true)
+            return;
+        if (previousBot == null || previousBot.GetComponent<PlayerInput>().isDestroing)
+        {
+            //if (objects.Where(p => p.isDestroing).Count() >= 1)
+            //    return;
             spawn.SpawnBot(this.gameObject, true);
             playerSounds.spawn.Play();
         }
-        else 
+        else
         {
+            botsManager.availableBots += 1;
             previousBot.GetComponent<PlayerInput>().enabled = true;
             int LayerIgnoreRaycast = LayerMask.NameToLayer("Default");
             previousBot.gameObject.layer = LayerIgnoreRaycast;
             groundChecker.SetActive(true);
             previousBot.GetComponent<PlayerInput>().SetAvailableBots();
         }
-        StartCoroutine(RealDestroy());
-        //Destroy(this.gameObject);
         gameControl.Gameplay.Disable();
+        StartCoroutine(RealDestroy());
         playerSounds.died.Play();
         deadEffect.Play();
+        isDestroing = true;
     }
     public IEnumerator RealDestroy()
     {
@@ -376,7 +409,7 @@ public class PlayerInput : MonoBehaviour
     }
     public void SetAvailableBots() 
     {
-        uiController.SetAvailableBots(availableBots);
+        uiController.SetAvailableBots(botsManager.availableBots);
     }
 
     public void SetIsOnGround(bool value)
